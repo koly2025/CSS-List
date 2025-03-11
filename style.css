@@ -1,0 +1,65 @@
+/* Basic List Style */
+.basic-list {
+    list-style-type: disc; /* Default list item style */
+    padding-left: 20px; /* Add padding to the left */
+}
+
+/* Ordered List Style */
+.ordered-list {
+    list-style-type: decimal; /* Numbered list */
+    padding-left: 20px;
+}
+
+/* Custom Bullet Style */
+.custom-bullet-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+.custom-bullet-list li::before {
+    content: "→ "; /* Add custom bullet */
+    color: blue;
+}
+
+/* Nested List Style */
+.nested-list {
+    list-style-type: square; /* Use square bullets for nested items */
+    padding-left: 30px;
+}
+
+.nested-list ul {
+    list-style-type: circle; /* Circle bullets for sub-items */
+    padding-left: 20px;
+}
+
+/* Horizontal List */
+.horizontal-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+    display: flex;
+}
+
+.horizontal-list li {
+    margin-right: 15px; /* Add spacing between items */
+}
+
+/* Styled Ordered List */
+.styled-ordered-list {
+    list-style-type: lower-alpha; /* Use lowercase letters (a, b, c, ...) */
+    padding-left: 20px;
+}
+
+.styled-ordered-list li {
+    font-weight: bold; /* Make list items bold */
+}
+
+/* Custom List with Images as Bullets */
+.image-bullet-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+.image-bullet-list li {
+    background: url('https://via.placeholder.com/20') no-repeat left center;
+    padding-left: 30px;
+}
